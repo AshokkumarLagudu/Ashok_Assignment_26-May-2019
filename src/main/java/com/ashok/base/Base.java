@@ -45,7 +45,7 @@ public class Base {
 //Initialize the browser
 public void initialization(){
 	
-	driver=DriverFactory.getDriver(prop.getProperty("browser"), prop.getProperty("url"), prop.getProperty("chromeDriverPath"));
+	driver=DriverFactory.getDriver(prop.getProperty("browser"), prop.getProperty("url"));
 	wait=new WebDriverWait(driver, Utils.wedriverWait);
 }
 

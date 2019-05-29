@@ -16,7 +16,7 @@ public class DriverFactory {
 	public static WebDriver getDriver(String browserName,String url) {
         
 		if(browserName.equalsIgnoreCase("chrome")){
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().version("74").setup();
 			driver=new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")){
 			WebDriverManager.firefoxdriver().setup();
