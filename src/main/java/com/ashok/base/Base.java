@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ashok.util.DriverFactory;
+import com.ashok.util.ReusableMethods;
 import com.ashok.util.Utils;
 
 
@@ -23,22 +24,11 @@ public class Base {
 	
 	public static WebDriver driver=null;
 	public static Properties prop=null;
-	private static WebDriverWait wait ;
+	private static WebDriverWait wait;
 	
 	public Base(){
-	prop=new Properties();
 	
-	try {
-		FileInputStream fis=new FileInputStream(new File(Utils.propFilePath));
-		prop.load(fis);
-	} catch (FileNotFoundException e) {
-		System.out.println("Properties File not found at given location");
-		e.printStackTrace();
-	} catch (IOException e) {
-		
-		e.printStackTrace();
-	} 
-	
+	prop=ReusableMethods.load_Propeties_File(Utils.propFilePath);
 	
 }
 
@@ -48,6 +38,7 @@ public void initialization(){
 	driver=DriverFactory.getDriver(prop.getProperty("browser"), prop.getProperty("url"));
 	wait=new WebDriverWait(driver, Utils.wedriverWait);
 }
+
 
 public void takeScreenShot(String methodName) {
    	 File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -70,11 +61,6 @@ public void waitUntilElementclickable(WebElement element){
 //wait until element present
 public void waitUntilElementVisible(WebElement element){
 	wait.until(ExpectedConditions.visibilityOf(element));
-}
-
-//wait and switch to frame
-public void waitUntilFrametobeAvailableAndSwitchTo(WebElement element){
-	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
 }
 
 public void killBrowser(){

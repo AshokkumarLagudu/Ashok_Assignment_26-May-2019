@@ -17,7 +17,8 @@ public class DriverFactory {
         
 		if(browserName.equalsIgnoreCase("chrome")){
 			WebDriverManager.chromedriver().version("74").setup();
-			driver=new ChromeDriver();
+			driver = new ChromeDriver();
+			
 		}else if(browserName.equalsIgnoreCase("firefox")){
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
@@ -26,12 +27,14 @@ public class DriverFactory {
 			driver=new InternetExplorerDriver();
 		}
 		
-		driver.manage().deleteAllCookies();
+		
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Utils.pageloadTimeout, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(Utils.implicitWait, TimeUnit.SECONDS);
 		
 		driver.get(url);
-		driver.manage().deleteAllCookies();
+		
 		return driver;
 	}
 

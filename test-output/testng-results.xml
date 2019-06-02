@@ -1,21 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="22" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10532" started-at="2019-05-28T14:49:26Z" finished-at="2019-05-28T14:49:36Z">
+  <suite name="Default suite" duration-ms="31031" started-at="2019-06-02T10:15:22Z" finished-at="2019-06-02T10:15:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10532" started-at="2019-05-28T14:49:26Z" finished-at="2019-05-28T14:49:36Z">
-      <class name="com.pageTest.loginPageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.pageTest.loginPageTest@4667ae56]" name="openBrowser" is-config="true" duration-ms="8467" started-at="2019-05-28T20:19:26Z" finished-at="2019-05-28T20:19:34Z">
+    <test name="Default test" duration-ms="31031" started-at="2019-06-02T10:15:22Z" finished-at="2019-06-02T10:15:54Z">
+      <class name="com.pageTest.TestCase_001">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.pageTest.TestCase_001@146ba0ac]" name="openBrowser" is-config="true" duration-ms="8009" started-at="2019-06-02T15:45:23Z" finished-at="2019-06-02T15:45:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="loginToAccount()[pri:0, instance:com.pageTest.loginPageTest@4667ae56]" name="loginToAccount" duration-ms="2004" started-at="2019-05-28T20:19:34Z" finished-at="2019-05-28T20:19:36Z">
+        <test-method status="PASS" signature="loginToAccount()[pri:0, instance:com.pageTest.TestCase_001@146ba0ac]" name="loginToAccount" is-config="true" duration-ms="3804" started-at="2019-06-02T15:45:31Z" depends-on-methods="com.pageTest.TestCase_001.openBrowser" finished-at="2019-06-02T15:45:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAccount -->
-      </class> <!-- com.pageTest.loginPageTest -->
+        <test-method status="PASS" signature="click_On_Person()[pri:2, instance:com.pageTest.TestCase_001@146ba0ac]" name="click_On_Person" duration-ms="1989" started-at="2019-06-02T15:45:34Z" finished-at="2019-06-02T15:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_Person -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="137" started-at="2019-06-02T15:45:37Z" data-provider="peopleData" finished-at="2019-06-02T15:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Title]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="121" started-at="2019-06-02T15:45:37Z" data-provider="peopleData" finished-at="2019-06-02T15:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="116" started-at="2019-06-02T15:45:37Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LastName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="170" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JobTitle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestEngineer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="121" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Organisation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wipro]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="230" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tags]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lead]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="177" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PhoneNumber]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8.46789123E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="117" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PhoneType]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="199" started-at="2019-06-02T15:45:38Z" data-provider="peopleData" finished-at="2019-06-02T15:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ramkumar@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="89" started-at="2019-06-02T15:45:39Z" data-provider="peopleData" finished-at="2019-06-02T15:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmailType]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="1270" started-at="2019-06-02T15:45:39Z" data-provider="peopleData" finished-at="2019-06-02T15:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Address]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Marathahalli]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="122" started-at="2019-06-02T15:45:40Z" data-provider="peopleData" finished-at="2019-06-02T15:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AddressType]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="171" started-at="2019-06-02T15:45:40Z" data-provider="peopleData" finished-at="2019-06-02T15:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="156" started-at="2019-06-02T15:45:40Z" data-provider="peopleData" finished-at="2019-06-02T15:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[karnataka]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="1212" started-at="2019-06-02T15:45:40Z" data-provider="peopleData" finished-at="2019-06-02T15:45:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Country]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="add_New_Peoples_Data(java.lang.String, java.lang.String)[pri:3, instance:com.pageTest.TestCase_001@146ba0ac]" name="add_New_Peoples_Data" duration-ms="3702" started-at="2019-06-02T15:45:42Z" data-provider="peopleData" finished-at="2019-06-02T15:45:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZipCode]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[560003.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Peoples_Data -->
+        <test-method status="PASS" signature="click_On_Cases()[pri:4, instance:com.pageTest.TestCase_001@146ba0ac]" name="click_On_Cases" duration-ms="2199" started-at="2019-06-02T15:45:45Z" finished-at="2019-06-02T15:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_Cases -->
+        <test-method status="PASS" signature="fill_New_Cases(java.lang.String, java.lang.String)[pri:5, instance:com.pageTest.TestCase_001@146ba0ac]" name="fill_New_Cases" duration-ms="3248" started-at="2019-06-02T15:45:48Z" data-provider="caseData" depends-on-methods="com.pageTest.TestCase_001.click_On_Cases" finished-at="2019-06-02T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Case Relates To*]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_New_Cases -->
+        <test-method status="PASS" signature="fill_New_Cases(java.lang.String, java.lang.String)[pri:5, instance:com.pageTest.TestCase_001@146ba0ac]" name="fill_New_Cases" duration-ms="150" started-at="2019-06-02T15:45:51Z" data-provider="caseData" depends-on-methods="com.pageTest.TestCase_001.click_On_Cases" finished-at="2019-06-02T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name*]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ram Kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_New_Cases -->
+        <test-method status="PASS" signature="fill_New_Cases(java.lang.String, java.lang.String)[pri:5, instance:com.pageTest.TestCase_001@146ba0ac]" name="fill_New_Cases" duration-ms="183" started-at="2019-06-02T15:45:51Z" data-provider="caseData" depends-on-methods="com.pageTest.TestCase_001.click_On_Cases" finished-at="2019-06-02T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Description]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New person]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_New_Cases -->
+        <test-method status="PASS" signature="fill_New_Cases(java.lang.String, java.lang.String)[pri:5, instance:com.pageTest.TestCase_001@146ba0ac]" name="fill_New_Cases" duration-ms="2256" started-at="2019-06-02T15:45:51Z" data-provider="caseData" depends-on-methods="com.pageTest.TestCase_001.click_On_Cases" finished-at="2019-06-02T15:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tags]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Engineer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fill_New_Cases -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.pageTest.TestCase_001@146ba0ac]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2019-06-02T15:45:54Z" finished-at="2019-06-02T15:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.pageTest.TestCase_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
