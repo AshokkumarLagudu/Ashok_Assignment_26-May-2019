@@ -3,16 +3,14 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.pageTest.TestCase_001">
+      <class name="com.pageTest.TestCase_002">
         <methods>
-          <include name="fill_New_Cases"/>
           <include name="loginToAccount"/>
           <include name="closeBrowser"/>
-          <include name="add_New_Peoples_Data"/>
-          <include name="click_On_Cases"/>
           <include name="openBrowser"/>
+          <include name="accountSettings"/>
         </methods>
-      </class> <!-- com.pageTest.TestCase_001 -->
+      </class> <!-- com.pageTest.TestCase_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

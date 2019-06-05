@@ -49,7 +49,9 @@ public class TestCase_002 extends Base {
 			loginpage.clickOnLogin();
 		}
 		String title = driver.getTitle();
-		Assert.assertEquals(title, "Dashboard | ashok CRM");
+		if(!prop.getProperty("accountName").isEmpty()){
+			Assert.assertEquals(title, "Dashboard | "+prop.getProperty("accountName")+" CRM");
+			}
 
 	}
 	
@@ -58,7 +60,10 @@ public class TestCase_002 extends Base {
 		
 		String name=homepage.click_On_AccountName().getText();
 		System.out.println(name);
-		Assert.assertEquals(name, prop.getProperty("accountName"));
+		if(!prop.getProperty("accountName").isEmpty()){
+			Assert.assertEquals(name, prop.getProperty("accountName"));
+		}
+		
 		waitUntilElementclickable(homepage.click_On_AccountName());
 		homepage.click_On_accoutnSettings();
 	}

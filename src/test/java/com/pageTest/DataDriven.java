@@ -1,17 +1,20 @@
-package com.ashok.util;
+package com.pageTest;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class Read_XL_Data {
+import com.ashok.util.Xls_Reader;
+
+
+
+public class DataDriven {
 
 	private static XSSFWorkbook workbook;
 	private static XSSFSheet sheet;
@@ -19,13 +22,14 @@ public class Read_XL_Data {
 	private static XSSFRow row;
 	private static FileInputStream ExcelFile;
 	static Xls_Reader xldata;
-
+	private static Logger log=LogManager.getLogger(DataDriven.class.getName());
 	@Test(dataProvider="data")
 	public void printData(String key,String value) {
 
-		
+		log.info("geting key is: "+key);
+		log.info("geting value is: "+value);
+		log.info("============================");
 				
-				System.out.println(key+"---> "+value);
 				
 			
 
@@ -49,7 +53,6 @@ public class Read_XL_Data {
 		System.out.println("maxRows = " + maxRows);
 		System.out.println("maxCol = " + maxCol);
 		tabArray = new String[(maxRows - 1)*(maxCol-1)][2];
-
 		int col=1;
 		int r=0;
 		while(col<maxCol){
@@ -58,10 +61,10 @@ public class Read_XL_Data {
 					
 						key = xldata.getCellData(sheetName, 0, i);
 						tabArray[r][0]=key;
+						
 
 						value = xldata.getCellData(sheetName, col, i);
 						tabArray[r][1]=value;
-						
 				r++;
 				
 			}
@@ -71,49 +74,4 @@ public class Read_XL_Data {
 		return tabArray;
 
 	}
-
-	/*
-	 * private static String getCellData(int rowNum, int cellNum) {
-	 * 
-	 * // cell = sheet.getRow(rowNum).getCell(cellNum); cell =
-	 * xldata.getCellData("AddPerson", cellNum, rowNum); // String
-	 * sdt=cell.getStringCellValue(); System.out.println(cell);
-	 * 
-	 * return cell; }
-	 */
-
 }
-
-/*
- * Object[][] tabArray = null;
- * 
- * try { ExcelFile = new FileInputStream(filePath); workbook = new
- * XSSFWorkbook(ExcelFile);
- * 
- * } catch (FileNotFoundException e) {
- * System.out.println("Please provide correct XLfile path");
- * e.printStackTrace(); } catch (IOException e) {
- * 
- * e.printStackTrace(); }
- * 
- * xldata = new Xls_Reader("C://Users//ASHOK//Desktop//PeoplesData.xlsx");
- * 
- * sheet = workbook.getSheet(sheetName); int maxRows = sheet.getLastRowNum();
- * int maxCol = 2; // row.getPhysicalNumberOfCells();
- * 
- * 
- * tabArray = new Object[maxRows][maxCol];
- * 
- * for (int i = 1; i < maxRows; i++) {
- * 
- * for (int j = 0; j < maxCol; j++) { if (j == 0) {
- * 
- * tabArray[i][j] = xldata.getCellData(sheetName, j, i);; } else {
- * 
- * tabArray[i][j] = xldata.getCellData(sheetName, j, i); }
- * 
- * } }
- * 
- * return tabArray;
- * 
- */

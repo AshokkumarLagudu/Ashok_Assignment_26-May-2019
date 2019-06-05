@@ -218,7 +218,7 @@ public class Peoples extends Base{
 		save.click();
 	}
 	
-	
+	//fill new person details in form
 	public void fill_User_Details(String key,String value){
 		
 		switch(key){
@@ -283,6 +283,8 @@ public class Peoples extends Base{
 			enter_Zipcode(value);
         break;
         
+        default :
+        	break;
         
 		}
 		

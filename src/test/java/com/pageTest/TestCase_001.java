@@ -55,7 +55,9 @@ public class TestCase_001 extends Base {
 			loginpage.clickOnLogin();
 		}
 		String title = driver.getTitle();
+		if(!prop.getProperty("accountName").isEmpty()){
 		Assert.assertEquals(title, "Dashboard | "+prop.getProperty("accountName")+" CRM");
+		}
 
 	}
 
@@ -86,17 +88,20 @@ public class TestCase_001 extends Base {
 			peoples.click_On_Save();
          String newPersonName=title+" "+fname+" "+lname;
          Assert.assertEquals(peoples.get_Added_New_PersonName(), newPersonName);
-			homepage.clickOnPeople();
-			peoples.click_On_add_Person();
+			
 		}
 
 	}
 
 	@Test(priority = 4)
-	public void click_On_Cases() {
+	public void click_On_Cases() throws InterruptedException {
 		cases=homepage.clickOnCases();
+		Thread.sleep(1000);
 		String title = driver.getTitle();
-		Assert.assertEquals(title, "Cases | "+prop.getProperty("accountName")+" CRM");
+		if(!prop.getProperty("accountName").isEmpty()){
+			Assert.assertEquals(title, "Cases | "+prop.getProperty("accountName")+" CRM");
+		}
+		
 		cases.click_On_AddCase();
 		Assert.assertEquals(cases.get_newCase_text(), "New Case");
 
