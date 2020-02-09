@@ -63,9 +63,7 @@ public class TestCase_001 extends Base {
 
 	@Test(priority = 2, enabled = true)
 	public void click_On_Person() {
-
 		homepage.clickOnPeople();
-		
 		peoples.click_On_add_Person();
 	}
 
