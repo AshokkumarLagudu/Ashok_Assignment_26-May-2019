@@ -67,7 +67,7 @@ public class TestCase_001 extends Base {
 	public void click_On_Person() {
 
 		homepage.clickOnPeople();
-		
+
 		peoples.click_On_add_Person();
 	}
 
