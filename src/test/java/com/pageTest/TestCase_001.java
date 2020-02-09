@@ -35,6 +35,7 @@ public class TestCase_001 extends Base {
 	// Application Initialization
 	@BeforeClass
 	public void openBrowser() {
+		//Driver initialization
 		initialization();
 		loginpage = new LoginPage();
 		peoples = new Peoples();
@@ -46,6 +47,7 @@ public class TestCase_001 extends Base {
 	public void loginToAccount() {
 
 		try {
+			//get user credentials from prop file
 			loginpage.enterUsername(prop.getProperty("userName"));
 			loginpage.enterPassword(prop.getProperty("password"));
 			loginpage.clickOnLogin();
