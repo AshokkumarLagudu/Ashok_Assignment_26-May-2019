@@ -26,7 +26,7 @@ public class TestCase_002 extends Base {
 	private static XSSFRow row;
 	private static FileInputStream ExcelFile;
 
-	// Application Initialization
+	// TODO:Application Initialization
 	@BeforeClass
 	public void openBrowser() {
 		initialization();
@@ -35,7 +35,7 @@ public class TestCase_002 extends Base {
 		homepage = new HomePage();
 
 	}
-
+	// TODO:Opening Browser
 	@BeforeClass(dependsOnMethods = { "openBrowser" })
 	public void loginToAccount() {
 
@@ -67,7 +67,7 @@ public class TestCase_002 extends Base {
 		waitUntilElementclickable(homepage.click_On_AccountName());
 		homepage.click_On_accoutnSettings();
 	}
-	//Browser will close/quite
+	//Closing browser
 	@AfterClass
 	public void closeBrowser(){
 		killBrowser();
