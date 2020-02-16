@@ -67,7 +67,7 @@ public class TestCase_002 extends Base {
 		waitUntilElementclickable(homepage.click_On_AccountName());
 		homepage.click_On_accoutnSettings();
 	}
-	
+	//Browser will close/quite
 	@AfterClass
 	public void closeBrowser(){
 		killBrowser();
